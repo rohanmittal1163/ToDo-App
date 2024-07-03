@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Poppins', sans-serif;
+}
+::selection {
+	color: white;
+	background-color: rgb(255, 100, 60);
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(135deg, #153677, #4e085f);
+}
+.container {
+	background-color: white;
+	border-radius: 10px;
+	padding: 30px 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: min(90%, 500px);
+	height: auto;
+}
+img {
+	width: 29px;
+	aspect-ratio: 1/1;
+	border-radius: 5px;
+}
+.heading p {
+	font-weight: bolder;
+	color: #153677;
+	font-size: 1.3rem;
+}
+.heading {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+input[type='text'] {
+	outline: 0;
+	border: 0;
+	background-color: rgb(234, 235, 238);
+	border-radius: 40px;
+	padding: 15px 25px;
+	width: 100%;
+	box-shadow: 40px 0px rgb(234, 235, 238);
+}
+
+input::placeholder {
+	text-transform: capitalize;
+}
+button {
+	background-color: rgb(255, 100, 60);
+	color: white;
+	text-transform: capitalize;
+	border-radius: 40px;
+	outline: 0;
+	border: 0;
+	padding: 15px 40px;
+	font-weight: bold;
+	cursor: pointer;
+}
+button:hover {
+	filter: brightness(1.3);
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+}
+
+.take {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+label {
+	cursor: pointer;
+	color: #4b5563;
+	width: 300px;
+	height: auto;
+	word-wrap: break-word;
+}
+.take label::first-letter {
+	text-transform: capitalize;
+}
+.take div {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.icon {
+	font-size: 1.2rem !important;
+	cursor: pointer;
+	border-radius: 100%;
+	padding: 8px;
+	color: rgb(255, 100, 60);
+}
+.icon:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+input[type='checkbox'] {
+	cursor: pointer;
+}
+input[type='checkbox']:checked + label {
+	text-decoration: line-through;
+	color: silver;
+}
+.notes {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	max-height: 300px;
+	overflow-y: scroll;
+	width: 400px;
+}
+.notes::-webkit-scrollbar {
+	width: 3px;
+}
+.notes::-webkit-scrollbar-button {
+	height: 1px;
+}
+
+.notes::-webkit-scrollbar-thumb {
+	background-color: silver;
+}
